@@ -1,0 +1,87 @@
+/* style.css */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Adjust opacity here (0.2–0.5 is usually good) */
+    z-index: -1;
+    pointer-events: none;
+  }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0 1rem;
+    line-height: 1.6;
+    background: url('/iStock-1084063188.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: antiquewhite;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+.tagline {
+    font-style: italic;
+    color: #fd9b9b ;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.job,
+.project {
+    margin-bottom: 1rem;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #fd9b9b ;
+}
+
+/* Mobile-friendly by default */
+/* Add responsiveness if needed */
+@media (min-width: 600px) {
+    body {
+        max-width: 700px;
+        margin: auto;
+    }
+}
+
+/* Hover Animation */
+@keyframes pulsate {
+    100% {
+        text-shadow:
+            0 0 7px rgb(92, 228, 87),
+            0 0 14px #5dd25d,
+            0 0 17px rgb(92, 228, 87),
+            0 0 24px #5dd25d,
+            0 0 34px rgb(92, 228, 87);
+    }
+}
+
+a:hover {
+    animation: pulsate 1.0s infinite alternate;
+    color: rgb(30, 130, 0);
+}

@@ -1,4 +1,3 @@
-/* style.css */
 body::before {
     content: "";
     position: fixed;
@@ -12,7 +11,7 @@ body {
     margin: 0;
     padding: 0 1rem;
     line-height: 1.6;
-    background: url('/iStock-1084063188.jpg') no-repeat center center fixed;
+    background: url('/images/iStock-1084063188.jpg') no-repeat center center fixed;
     background-size: cover;
     color: antiquewhite;
 }

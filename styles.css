@@ -7,7 +7,7 @@ body::before {
     pointer-events: none;
   }
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family:'Work Sans', sans-serif;
     margin: 0;
     padding: 0 1rem;
     line-height: 1.6;
@@ -15,7 +15,6 @@ body {
     background-size: cover;
     color: antiquewhite;
 }
-
 header {
     text-align: center;
     padding: 2rem 0 1rem;
@@ -43,6 +42,9 @@ ul {
 a {
     color: #ff0000;
     text-decoration: none;
+}
+.project > a {
+    text-align: center;
 }
 
 a:hover {
